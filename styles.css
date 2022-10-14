@@ -1,10 +1,32 @@
-/* #header {
+#header {
   display: flex;
   justify-content: space-between;
 }
-#nav-bar {
-  display: flex;
+#nav-bar li {
+  display: inline;
   justify-content: space-between;
-  text-decoration: none;
+  padding: 10px;
+}
+#nav-bar li a {
   color: black;
-} */
+  text-decoration: none;
+}
+@media (max-width: 2000px) {
+  h1 {
+    text-align: center;
+  }
+  #vidone video {
+    align-content: center;
+  }
+  #form {
+    align-items: center;
+  }
+  form input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #submit {
+    background: orange;
+  }
+}
